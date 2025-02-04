@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCD Workshop 2025</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Replace with the actual path to the CSS file -->
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .slider .title-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .banner {
+            background-color: rgb(117, 50, 29);  RGB color (150, 90, 45) */
+            color: white; /* White text */
+            padding: 5px; /* Padding around text */
+            text-align: center; /* Center align text */
+            font-size: 24px; /* Font size */
+            animation: moveText 1s infinite alternate; /* Add animation */
+            color: white;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="read_more.js"></script>
+</head>
+<body>
+    <!-- <div class="banner">
+        SUBMISSIONS FOR POSTERS OPEN
+    </div> -->
+    <div class="nav">
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <!-- <a href="call_for_posters.html" class="eye-catching-link">Call for Posters</a> -->
+            <a href="#introduction">Introduction</a>
+            <a href="#speakers">Speakers</a>
+            <!-- <a href="#schedule">Schedule</a>-->
+            <a href="#posters">Posters & Spotlights</a>
+            <a href="#organizers">Organizers</a>
+        </div>
+    </div>
+
+    <div class="slider" id="home">
+        <img src="./Lens_LargerCrop.png" alt="Lens image">
+        <div class="title-container">
+            <h2>14th IEEE International Workshop on</h2>
+            <h1>Computational Cameras and Displays</h1>
+          <!--   <h1>CCD 2023</h1>
+            <h2>CVPR workshop on cutting edge research on cameras and displays</h2> -->
+            <h2>Music City Center, Nashville TN</h2>
+            <h2>June 11 or 12, CVPR 2025</h2>
+        </div>
+    </div>
+
+   <!--  <div class="title-container" id="home">
+        <h1>Computational Cameras and Displays Workshop</h1>
+        <h2>June 18, 2023</h2>
+    </div> -->
+
+    <div class="container">
+        <!--  <div class="announcement-banner">
+            Poster & Spotlight Submissions are now open! Submit <a href="https://forms.gle/2nth2wfJhGLgjVbz6">via this form</a> by May 21st, 2023. <br>
+            Top-tier posters/spotlights will be invited to deliver short research talks at CCD this year.
+        </div>  -->
+        <div class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                <strong style="font-size: 16px;">Computational photography</strong><span style="font-size: 16px; font-weight: 400;"> has become an increasingly active area of research within the computer vision community. Within the few last years, the amount of research has grown tremendously with dozens of published papers per year in a variety of vision, optics, and graphics venues. A similar trend can be seen in the emerging field of computational displays – spurred by the widespread availability of precise optical and material fabrication technologies, the research community has begun to investigate the joint design of display optics and computational processing. Such displays are not only designed for human observers but also for computer vision applications, providing high-dimensional structured illumination that varies in space, time, angle, and the color spectrum. This workshop is designed to unite the computational camera and display communities in that it considers to what degree concepts from computational cameras can inform the design of emerging computational displays and vice versa, both focused on applications in computer vision.</span>
+            </p>
+            <p>
+                <span style="font-size: 16px; font-weight: 400;">The Computational Cameras and Displays (CCD) workshop series serves as an annual gathering place for researchers and practitioners who design, build, and use computational cameras, displays, and imaging systems for a wide variety of uses. The workshop solicits posters and demo submissions on all topics relating to computational imaging systems.</span>
+            </p>
+            <p>
+                <strong style="font-size: 16px;">Previous CCD Workshops:</strong>
+				<a href="https://csiplab.github.io/ccd2024/">CCD2024</a>,
+                <a href="https://ccd2023.github.io/">CCD2023</a>,
+                <a href="https://sites.northwestern.edu/ccd2022/">CCD2022</a>,
+                <a href="https://visual.ee.ucla.edu/ccd2021.htm/">CCD2021</a>,
+                <a href="http://ccd2020.cms.caltech.edu/">CCD2020</a>,
+                <a href="http://wisionlab.cs.wisc.edu/ccd2018/">CCD2018</a>,
+                <a href="http://www.computationalimaging.org/ccd2017/">CCD2017</a>,
+                <a href="http://imagesci.ece.cmu.edu/CCD2016/">CCD2016</a>,
+                <a href="http://www.ece.rice.edu/~vb10/CVPR2014/CCD2014/index.php">CCD2014</a>
+            </p>
+        </div>
+
+        <section class="location-section" id="location">
+            <h3>Location: <strong>TBD</strong></h3>
+            <!-- <p>
+                <a href="https://cvpr2023.thecvf.com/virtual/2024/workshop/23625" target="_blank" rel="noopener noreferrer">
+                    <strong>Virtual Workshop Link</strong>
+                </a>
+            </p> -->
+        </section>
+
+<div class="section" id="speakers">
+    <h2>Keynote Talks</h2>
+    <div class="people">
+      <div>
+        <a href="https://www.cs.columbia.edu/~nayar/">
+              <img src=https://www.cs.columbia.edu/~nayar/img/shree.jpg alt="Shree Nayar">
+              <div class="name">Shree Nayar</div>
+              <div class="aff">Columbia</div>
+        </a>
+        <div id="c1" class="content_bio">
+		  Shree K. Nayar is the T. C. Chang Professor of Computer Science at Columbia University. He heads the Columbia Vision Laboratory (CAVE), which develops computational imaging and computer vision systems. His research is focused on three areas - the creation of novel cameras that provide new forms of visual information, the design of physics-based models for vision and graphics, and the development of algorithms for understanding scenes from images. His work is motivated by applications in the fields of imaging, computer vision, robotics, virtual reality, augmented reality, visual communication, computer graphics and human-computer interfaces. Nayar received his PhD degree in Electrical and Computer Engineering from the Robotics Institute at Carnegie Mellon University. For his research and teaching he has received several honors including the David Marr Prize (1990 and 1995), the David and Lucile Packard Fellowship (1992), the National Young Investigator Award (1993), the NTT Distinguished Scientific Achievement Award (1994), the Keck Foundation Award for Excellence in Teaching (1995), the Columbia Great Teacher Award (2006), the Carnegie Mellon Alumni Achievement Award (2009), Sony Appreciation Honor (2014), the Columbia Engineering Distinguished Faculty Teaching Award (2015), the IEEE PAMI Distinguished Researcher Award (2019), the Funai Achievement Award (2021), and the Okawa Prize (2023). For his contributions to computer vision and computational imaging, he was elected to the National Academy of Engineering in 2008, the American Academy of Arts and Sciences in 2011, the National Academy of Inventors in 2014, and the Indian National Academy of Engineering in 2022.
+          
+        </div>
+      </div>
+
+      <div>
+        <a href="https://www.cs.cmu.edu/~igkioule/">
+              <img src=https://www.cs.cmu.edu/~igkioule/index_files/photo.jpg alt="Ioannis Gkioulekas">
+              <div class="name">Ioannis Gkioulekas</div>
+              <div class="aff">CMU</div>
+        </a>
+        <div id="c2" class="content_bio">
+		  Ioannis Gkioulekas is an associate professor at the Robotics Institute, Carnegie Mellon University (CMU). He is a Sloan research fellow and a recipient of the NSF CAREER award and the Best Paper award at CVPR 2019, the Best Student Paper award at CVPR 2024, the Best Paper award at SIGGRAPH 2024, and more. He has PhD and MS degrees from Harvard University, where he was advised by Todd Zickler, and a Diploma from the National Technical University of Athens, where Petros Maragos advised him. His works broadly on computer vision, computer graphics, and computational imaging, with a focus on problems including non-line-of-sight imaging, tissue imaging, interferometric imaging systems, physically based rendering, and differentiable rendering.
+
+        </div>
+
+      </div>
+
+      <div>
+        <a href="https://www.laurawaller.com/ ">
+              <img src=http://www.laurawaller.com/wp-content/uploads/2012/07/image347.jpg alt="Laura Waller">
+              <div class="name">Laura Waller</div>
+              <div class="aff">UC Berkeley</div>
+        </a>
+
+        <div id="c3" class="content_bio">
+	  Laura Waller leads the Computational Imaging Lab at UC Berkeley, which develops new methods for optical imaging, with optics and computational algorithms designed jointly. She holds the Ted Van Duzer Endowed Professorship and is a Senior Fellow at the Berkeley Institute of Data Science (BIDS), with affiliations in Bioengineering and Applied Sciences & Technology. Laura Waller earned her B.S., M.Eng., and Ph.D. degrees from the Massachusetts Institute of Technology, USA. She was a postdoctoral research associate at Princeton University, USA before joining the UC Berkeley. Waller has established herself as a visionary in the important new field of computational imaging through her pioneering work on phase retrieval from intensity measurements. She has also made advancements in Fourier ptychography, 3D imaging in scattering media and in imaging using a diffuser. In the past four years, Waller has generated ~$6M in research funding and published 27 journal papers and 6 patent applications. Her research has been recognized through over 100 invited talks, and she has contributed to the research community by serving on 44 conference committees (14 as chair) and as Associate Editor of IEEE Transactions on Computational Imaging. She has received many other awards, including the SPIE Early Career Achievement Award, the Chan-Zuckerberg Initiative Biohub Investigator Award, and the OSA Foundation’s Ivan P. Kaminow Outstanding Early Career Professional Prize. She is a Fellow of OSA and the American Institute for Medical and Biological Engineering. In 2021, she received OSA's Adolph Lomb Medal "for important contributions to the advancement of computational microscopy and its applications”, and in 2024 she received the Max Planck-Humboldt Medal for her outstanding achievements in computational microscopy.
+      
+        </div>
+      </div>
+
+
+      <div>
+        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">
+            <img src=https://www2.eecs.berkeley.edu/Faculty/Photos/Homepages/yirenng.jpg alt="Ren Ng">
+            <div class="name">Ren Ng</div>
+            <div class="aff"> UC Berkeley</div>
+        </a>
+
+        <div id="c4" class="content_bio">
+        Ren Ng is a professor in Electrical Engineering and Computer Science at the University of California, Berkeley. His research interests are in imaging, graphics, computer vision, human vision and artificial intelligence. Prior to Berkeley, Ren was founder and CEO of Lytro, Inc., which commercialized his Ph.D. research and brought consumer light field cameras to market. Ren completed his Ph.D. in computer science at Stanford University, and received the ACM Doctoral Dissertation Award and Stanford's Arthur Samuel Award. Ren has received the 2020 ECCV Best Paper Honorable Mention, Jim and Donna Gray Faculty Award for Undergraduate Teaching, Hellman Faculty Fellowship, Sloan Research Fellowship, the HIPA Photographic Research Award, PMDA Technical Achievement Award, R.I.T.'s Imaging Hall of Fame, the Selwyn Award from the Royal Photographic Society, MIT Tech Review's TR35 and Entrepreneur of the Year, Fast Company's 100 Most Creative People in Business, and Silicon Valley Journal's 40 under 40.
+        </div>
+        </div>
+    </div>
+    <h2>Invited Talks</h2>
+     <div class="people">
+         <div>
+           <a href="https://manasi94.github.io/">
+                 <img src=https://manasi94.github.io/Manasi_Muglikar.png alt="Manasi Muglika">
+                 <div class="name">Manasi Muglikar</div>
+                 <div class="aff">University of Zurich</div>
+           </a>
+          <div id="c5" class="content_bio">
+		  Manasi is currently a Ph.D student advised by Prof. Davide Scaramuzza at Robotics and Perception Group, in the Department of Informatics, University of Zurich, and the Department of Neuroinformatics, University of Zurich and ETH Zurich. Manasi’s interests lie at the intersection of computer vision and computational photography with particular interest in developing algorithms for event-based cameras, and their applications in robotics and augmented reality. Manasi was recently featured in the NCCR Robotics campaign for her work on event cameras. Previously, Manasi graduated from Carnegie Mellon University with Masters in Electrical and Computer Engineering in 2018, where she was advised by Prof. Srinivasa Narasimhan. During her Ph.D, she also worked at the Camera Culture Group at MIT, advised by Prof. Ramesh Raskar. 
+          
+          </div>
+         </div>
+
+          <div>
+           <a href="https://cs.gmu.edu/~jinweiye/ ">
+                 <img src=https://cs.gmu.edu/~jinweiye/assets/images/jinwei_ye_s.jpg alt="Jinwei Ye">
+                 <div class="name">Jinwei Ye</div>
+                 <div class="aff">George Mason University</div>
+           </a>
+           <div id="c6" class="content_bio">
+              Jinwei Ye is an Assistant Professor of Computer Science at George Mason University. Before that, she was an Assistant Professor at Louisiana State University (2017–2021). She received her Ph.D. in Computer Science from the University of Delaware in 2014. She was a postdoctoral fellow at US Army Research Lab (2014–2015), and a senior research scientist at Canon U.S.A. (2015–2017). Her research interests are at the intersection of computer vision, computational imaging, and computer graphics, with a focus on geometry and material reconstruction. Her works are mainly supported by NSF and ARL. She received the NSF CRII award in 2020 and NSF CAREER award in 2023. She served in the senior program committee (area chair) and organizing committee for many computer vision and AI conferences, including CVPR, ICCV, ICCP, AAAI, and IJCAI. She is a Senior Member of IEEE.
+           </div>
+
+          </div>
+
+          <div>
+
+
+           <a href="https://choisuyeon.github.io/">
+                 <img src=https://choisuyeon.github.io/assets/images/profile2.jpg alt="Suyeon Choi">
+                 <div class="name">Suyeon Choi</div>
+                 <div class="aff">Stanford University</div>
+           </a>
+
+           <div id="c7" class="content_bio">
+			  Suyeon is currently a postdoctoral scholar at the Stanford Computational Imaging Lab, working with Prof. Gordon Wetzstein. He is generally interested in developing computational optical systems at the intersection of graphics, optics, AI, and vision science. Lately, he has been developing holographic display systems incorporating machine learning towards next-generation VR/AR displays. His research has been partly supported by a Meta Research PhD Fellowship, a SPIE Optics and Photonics Education Scholarship, a Kwanjeong Scholarship, a Korean Government Scholarship, and a GPU gift from NVIDIA.
+              
+           </div>
+
+          </div>
+
+          <div>
+
+
+         <a href="https://3dim.northwestern.edu/">
+               <img src=https://3dim.northwestern.edu/authors/admin/avatar_hu7173c117329af508875285520f563095_812558_250x250_fill_q90_lanczos_center.jpg alt="Florian Willomitzer">
+               <div class="name">Florian Willomitzer</div>
+               <div class="aff">University of Arizona</div>
+         </a>
+
+         <div id="c8" class="content_bio">
+            Florian Willomitzer an Associate Professor at the Wyant College of Optical Sciences and directs the Computational 3D Imaging and Measurement (3DIM) Lab. He graduated from the University of Erlangen-Nuremberg, Germany, where he received his Ph.D. degree with honors (‘summa cum laude’) in 2017. During his doctoral studies, he investigated physical and information-theoretical limits of optical 3D-sensing for medical imaging and industrial inspection, and implemented sensors that operate close to these limits. In the 3DIM Lab, Prof. Willomitzer and his team work on novel methods to image hidden objects through scattering media or around corners, high-resolution holographic displays, unconventional methods for precise VR eye-tracking, and the implementation of high-precision metrology methods in low-cost mobile handheld devices. Moreover, the group develops novel time-of-flight and structured light imaging techniques working at depth resolutions in the 100μm-range. Prof. Willomitzer serves/served as Chair and Committee Member of several Optica COSI conferences, Optics Chair of the 2022 IEEE ICCP conference, Chair and Host of the Optica Incubator on Imaging Through 100 Scattering Lengths, Committee member of Optica FiO conferences and as reviewer for Nature, Optica (OSA), SPIE, IEEE and CVPR. He is a recipient of the NSF CRII grant, winner of the Optica 20th Anniversary Challenge, and his Ph.D. thesis was awarded with the Springer Theses Award for Outstanding Ph.D. Research.
+		</div>
+         </div>
+
+         <div>
+           <a href="https://rick-chang.github.io/">
+                 <img src=https://media.licdn.com/dms/image/v2/C4E03AQFsY5s8uSBMEQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516775991107?e=1743033600&v=beta&t=UgVhxUBBPYtcZwVcT2ULJR0kx9zO0bOhUlSaokAPug8 alt="Jen-Hao (Rick) Chang ">
+                 <div class="name">Jen-Hao (Rick) Chang </div>
+                 <div class="aff">Apple</div>
+           </a>
+
+           <div id="c9" class="content_bio">
+			Rick is currently a research scientist at Apple where he focuses on neural rendering, generative models for sequences, and computational imaging and displays. His research has been incorporated into various Apple products, including Siri, Scribble on iPad, QuickPath keyboard on iOs, and watchOS. His current research interests are broadly in generative models, computational photography, and novel sensors. Rick obtained his PhD from the ECE Department at Carnegie Mellon University, where he worked with Prof. Vijayakumar Bhagavatula and Prof. Aswin Sankaranarayanan on computational photography and displays, computer vision, and machine learning. He received hs M.S. and B.S. degrees in electrical engineering from National Taiwan University, where he worked with Prof. Tian-Li Yu, and Dr. Yu-Chiang Frank Wang on image processing.
+            
+           </div>
+         </div>
+
+
+
+    </div>
+</div>
+
+    <!-- <div class="section" id="schedule">
+        <h2>Schedule</h2>
+        <table>
+         <tr>
+           <td>Time(Seattle local)</td>
+           <td>Title</td>
+           <td>Speaker</td>
+         </tr>
+         <tr>
+           <td>8:45 - 9:00</td>
+           <td>Welcome / Opening Remarks</td>
+           <td>Organizers</td>
+         </tr>
+         <tr>
+           <td>9:00 - 9:30	</td>
+           <td>Keynote 1: Advanced Optical Imaging: Scattering and Absorption-Based Internal Structure Analysis with Photoacoustic Technology</td>
+           <td>Imari Sato</td>
+         </tr>
+         <tr>
+           <td>9:30-9:50	</td>
+           <td>Invited Talk 1: Invisible Fluorescent Markers for Deformable Tracking</td>
+           <td>Jinwei Ye</td>
+         </tr>
+         <tr>
+           <td>9:50 - 10:10  </td>
+           <td>Invited Talk 2: Resource-Aware Single-Photon Imaging</td>
+           <td>Atul Ingle</td>
+         </tr>
+         <tr>
+           <td>10:10 - 10:30	</td>
+           <td>Morning Break</td>
+           <td></td>
+         </tr>
+         <tr>
+           <td>10:30 - 11:00</td>
+           <td>Keynote 2: Spatially-Selective Lensing</td>
+           <td>Aswin C. Sankaranarayanan</td>
+         </tr>
+         <tr>
+           <td>11:00 - 11:15	</td>
+           <td>Spotlight presentations</td>
+           <td></td>
+         </tr>
+         <tr>
+           <td>11:15 - 12:30	</td>
+           <td>Poster Session (Boards #315-344)</td>
+           <td></td>
+         </tr>
+
+         <tr>
+           <td>12:30 - 13:30	</td>
+           <td>Lunch break</td>
+           <td></td>
+         </tr>
+
+         <tr>
+           <td>13:30 - 14:00	</td>
+           <td>Keynote 3: Computational photography at the point of capture on mobile cameras</td>
+           <td>Marc Levoy </td>
+         </tr>
+
+         <tr>
+           <td>14:00 - 14:20	</td>
+           <td>Invited Talk 3: Mobile Time-Lapse</td>
+           <td>Abe Davis</td>
+         </tr>
+
+         <tr>
+           <td>14:20 - 14:40	</td>
+           <td>Invited Talk 4: From Cameras to Displays, End-to-End Optimization Empowers Imaging Fidelity</td>
+           <td>Evan Peng</td>
+         </tr>
+
+
+         <tr>
+           <td>14:40 - 15:00	</td>
+           <td>Invited Talk 5: Revealing the Invisible with Neural Inverse Light Transport</td>
+           <td>Akshat Dave</td>
+         </tr>
+
+         <tr>
+           <td>15:00 - 15:30	</td>
+           <td>Afternoon Break</td>
+           <td></td>
+         </tr>
+
+         <tr>
+           <td>15:30 - 16:00	</td>
+           <td>Keynote 4: Seeing Beyond the Blur: Imaging Black Holes with Increasingly Strong Assumptions</td>
+           <td>Katie Bouman</td>
+         </tr>
+
+         <tr>
+           <td>16:00 - 16:45	</td>
+           <td>Panel discussion</td>
+           <td></td>
+         </tr>
+
+         <tr>
+           <td>16:45 - 16:55	</td>
+           <td>Closing Remarks</td>
+           <td></td>
+         </tr>
+
+       </table>
+    </div> -->
+
+    <div class="section" id="posters">
+        <h2>Posters & Spotlights</h2>
+		Call for posters coming soon!
+        <!-- <div align="middle">
+    <iframe width="997" height="561" src="https://www.youtube.com/embed/FbnoEK_HXQY" title="CVPR CCD 2023 Poster spotlight videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div> -->
+
+       <!-- <table>
+      <tr>
+        <td>ID</td>
+        <td>Board Number</td>
+        <td>Title</td>
+        <td>Presenter</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td> #315 </td>
+        <td>Learning Constrained Binary Color Filter Arrays For Enhanced Demosaicking with Trainable Hard Thresholding</td>
+        <td>Ali Cafer Gurbuz</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td> #316 </td>
+        <td>Physics constrained neural tomography of a black hole</td>
+        <td>Aviad Levis</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td> #317 </td>
+        <td>Single View Refractive Index Tomography with Neural Fields</td>
+        <td>Brandon Zhao</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td> #318 </td>
+        <td>Towards 3D Vision with Low-Cost Single-Photon Cameras</td>
+        <td>Carter Sifferman</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td> #319 </td>
+        <td>Optimized nano optics for 360 Structured light</td>
+        <td>Eunsue Choi</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td> #320 </td>
+        <td>PixRO: Pixel-Distributed Rotational Odometry with Gaussian Belief Propagation</td>
+        <td>Ignacio Alzugaray</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td> #321 </td>
+        <td>Behind the Blurry Background: Practical Synthetic Features To Enable Robust  Imaging Through Scattering</td>
+        <td>Jeffrey Alido</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td> #322 </td>
+        <td>Doppler Time-of-Flight Rendering</td>
+        <td>Juhyeon Kim</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td> #323 </td>
+        <td>3D sensing with single-photon cameras for resource-constrained applications</td>
+        <td>Kaustubh Sadekar</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td> #324 </td>
+        <td>Seeing the World Through Your Eyes</td>
+        <td>Kevin Zhang</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td> #325 </td>
+        <td>WaveMo: Learning Wavefront Modulations to See Through Scattering</td>
+        <td>Mingyang Xie</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td> #326 </td>
+        <td>Domain Expansion via Network Adaptation for Solving Inverse Problems</td>
+        <td>Nebiyou Tenager Yismaw</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td> #327 </td>
+        <td>TurboSL: Dense, Accurate and Fast 3D by Neural Inverse Structured Light</td>
+        <td>Parsa Mirdehghan</td>
+      </tr>
+       <tr>
+        <td>14</td>
+        <td> #328 </td>
+        <td>Computational multi-aperture camera for wide-field high-resolution imaging</td>
+        <td>Qianwan Yang</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td> #329 </td>
+        <td>Turb-Seg-Res: A Segment-then-Restore Pipeline for Dynamic Videos with Atmospheric Turbulence</td>
+        <td>Ripon Kumar Saha</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td> #330 </td>
+        <td>CodedEvents: Optimal Point-Spread-Function Engineering for 3D-Tracking with Event Cameras</td>
+        <td>Sachin Shah</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td> #331 </td>
+        <td>Snapshot Lidar: Fourier embedding of amplitude and phase for single-image depth reconstruction</td>
+        <td>Sarah Friday</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td> #332 </td>
+        <td>Differentiable Display Photometric Stereo</td>
+        <td>Seokjun Choi</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td> #333 </td>
+        <td>Dispersed Structured Light for Hyperspectral 3D imaging</td>
+        <td>Suhyun Shin</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td> #334 </td>
+        <td>Generalized Event Cameras</td>
+        <td>Varun Sundar</td>
+      </tr>
+    <tr>
+        <td>21</td>
+        <td> #335 </td>
+        <td>ƒNeRF: High Quality Radiance Fields from Practical Cameras</td>
+        <td>Yi Hua</td>
+      </tr>
+    <tr>
+        <td>22</td>
+        <td> #336 </td>
+        <td>Spectral and Polarization Vision: Spectro-polarimetric Real-world Dataset</td>
+        <td>Yujin Jeon</td>
+      </tr>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td> #337 </td>
+      <td>Projecting Trackable Thermal Patterns for Dynamic Computer Vision</td>
+      <td>Mark Sheinin</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td> #338 </td>
+      <td>Explicit Neural Fields for 3D Refractive Index Reconstruction using Two-photon Fluorescence Illuminations</td>
+      <td>Yi Xue</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td> #339 </td>
+      <td>Streaming quanta sensors</td>
+      <td>Tianyi Zhang</td>
+    </tr>
+      <td>26</td>
+      <td> #340 </td>
+      <td>Textureless Deformable Object Tracking with Invisible Markers</td>
+      <td>Yubei Tu</td>
+    </tr>
+    </table>
+    </div> -->
+
+    <div class="section" id="organizers">
+        <h2>Workshop Chairs</h2>
+        <div class="people">
+            <a href="https://kristinamonakhova.com/kristina/">
+                <img src="https://kristinamonakhova.com/assets/img/Kristina_Monakhova.jpg" alt="Kristina Monakhova">
+                <div>Kristina Monakhova</div>
+                <div class="aff">Cornell</div>
+            </a>
+            <a href="https://www.marksheinin.com">
+                <img src="https://static.wixstatic.com/media/a41a28_00e0c880c1574c93b65620b4721e2e49~mv2.jpg/v1/fill/w_330,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a41a28_00e0c880c1574c93b65620b4721e2e49~mv2.jpg" alt="Mark Sheinin">
+                <div>Mark Sheinin</div>
+                <div class="aff">Weizmann Institute of Science</div>
+            </a>
+            <a href="https://vishwa91.github.io/">
+                <img src="https://vishwa91.github.io/images/vishwa.jpg" alt="Vishwanath Saragadam">
+                <div>Vishwanath Saragadam</div>
+                <div class="aff">UC Riverside</div>
+            </a>
+            <a href="https://www.xia-lab.com/">
+                <img src="https://images.squarespace-cdn.com/content/v1/668ee385d2b72d4815f15080/3848bb7d-41ae-4f5f-9a52-6a3c889a91ad/Fei_photo.jpeg?format=2500w" alt="Fei Xia">
+                <div>Fei Xia</div>
+                <div class="aff">UC Irvine</div>
+            </a>
+            
+            
+        </div>
+     
+    </div>
+</div>
+
+<div class="foot">
+    <p>Computational Cameras and Displays Workshop - June 11 or 12, 2025</p>
+</div>
