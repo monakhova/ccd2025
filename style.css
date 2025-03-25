@@ -59,8 +59,8 @@ h3 {
 .announcement-banner {
     /*background-color: #f0f0f0;*/ /* Updated to light gray color */
     /*color: #000;*/
-    background-color: lightgray;
-    color: red;
+    background-color: #D67B6A;
+    color: black;
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -72,7 +72,7 @@ h3 {
 
 .announcement-banner a {
    /* color: #000;*/
-   color: blue;
+   color: black;
     text-decoration: underline;
 }
 
